@@ -1,0 +1,105 @@
+footer {
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    background-image: url("../img/normal/Banner_KOI.jpg");
+    background-size: cover;
+}
+
+.footer-contain {
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background: var(--bg-purple-blur);
+}
+.footer-column {
+    padding-left: 12px;
+    width: 248px;
+margin: 40px;
+}
+@media (max-width:1200px){
+    .footer-column {
+        width: 210px;
+    margin: 20px;
+    }
+}
+.footer-left, .footer-right {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.LogoFooter {
+    width: 200px;
+    margin: 40px 0;
+    text-align: center;
+}
+.LogoFoot {
+    width: 60%;
+    height: auto;
+}
+.footer-title {
+    display: inline-block;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 24px;
+    border-bottom: solid 3px var(--bg-purple6);
+    margin-bottom: 10px;
+}
+.footer-item {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 20px;
+    padding: 2px 5px;
+}
+.footer-link {
+    transition: 0.4s ;
+    color:white;
+}
+.footer-link:hover {
+    color:var(--bg-purple3);
+    text-shadow: 0px 0px 2px var(--bg-purple3),0px 0px 4px var(--bg-purple3);
+}
+.contain-pol {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    background: #000;
+}
+.footer-pol {
+    margin-top: 10px;
+    border-top: solid 1px white;
+    width: 92%;
+    max-width: 600px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.footer-copyright {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: #bbb;
+}
+
+@media (max-width:900px){
+    
+    .footer-item {
+        text-align: center;
+        width: 100%;
+    }
+    .footer-title {
+        text-align: center;
+    }
+    .footer-column {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-content: center;
+        width: 260px;
+    margin: 40px;
+    }
+}

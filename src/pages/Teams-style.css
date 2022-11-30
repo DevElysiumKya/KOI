@@ -1,0 +1,130 @@
+:root {
+    --hover-box: #fff;
+}
+.Team-portada {
+    background: transparent;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: center;
+    min-height: 60vh;
+    animation: docload 0.1s;
+}
+@keyframes docload {
+    0% {
+        min-height: 0vh;
+        height: 0vh;
+    }
+    100% {
+        height: 100vh;
+        min-height: 90vh;
+    }
+}
+.Team-title {
+    font-family: 'Chakra Petch', sans-serif;
+    color: white;
+    display: inline-block;
+    border-bottom: solid 10px var(--bg-purple6);
+    padding: 0;
+    margin: 0 auto;
+    font-size: 32px;
+}
+.Team-title2 {
+    color: white;
+    display: inline-block;
+    padding: 0;
+    margin: 0 auto 50px;
+    font-size: 20px;
+}
+.container-teams {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.container-teams .tbox {
+    transition: 0.1s;
+    color: white;
+    width: 280px;
+    height: 360px;
+    background: rgba(37, 18, 73, 0.8);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 10px 8px;
+    overflow: hidden;
+}
+.container-teams .one:hover, .container-teams .three:hover {
+    transition: 0.6s;
+    --hover-box: #f8b33f;
+    box-shadow: 0px 0px 10px var(--hover-box);
+}
+.container-teams .two:hover {
+    transition: 0.6s;
+    --hover-box: #ff4655;
+    box-shadow: 0px 0px 10px var(--hover-box);
+}
+.container-teams .four:hover {
+    transition: 0.6s;
+    --hover-box: #af24ff;
+    box-shadow: 0px 0px 10px var(--hover-box);
+}
+.container-teams .tbox:hover .svglol, .container-teams .tbox:hover .svgtft{
+    transition: 0.5s;
+    color: #f8b33f;
+}
+.container-teams .tbox:hover .svgvalorant{
+    transition: 0.5s;
+    color: #ff4655;
+}
+.container-teams .tbox:hover .tinfo{
+    transition: 0.5s;
+    color: #af24ff;
+}
+.container-teams .tbox .tcontent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.svglol {
+    display: block;
+    margin: 50px 0px 50px;
+}
+.svgtft {
+    display: block;
+    margin: 55px 0px 50px;
+}
+.svgvalorant {
+    display: block;
+    margin: 20px;
+}
+.imgTeams {
+    margin: 10px 10px 0;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.view-more {
+    display: block;
+    transform: translate(0, 50px);
+    font-size: 30px;
+    text-shadow: 0px 0px 2px var(--hover-box);
+    color: var(--hover-box);
+    text-align: center;
+    transition: 0.6s;
+}
+.container-teams .tbox:hover .view-more {
+    transition: 0.8s;
+    transform: translate(0, -110px);
+}
+.container-teams .tbox:hover .imgTeams {
+    transition: 0.8s;
+    transform: translate(0, 180px);
+}
+.tinfo {
+    color: white;
+    font-size: 1.9rem;
+    padding: 46px 0;
+}

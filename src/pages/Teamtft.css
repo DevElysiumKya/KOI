@@ -1,0 +1,83 @@
+.root-contain-tft {
+    margin: 0px auto 48px;
+    width: 100%;
+    max-width: 1720px;
+    animation: docload 0.1s;
+        overflow: hidden;
+        height: auto;
+        min-height: 90vh;
+    }
+    @keyframes docload {
+        0% {
+            min-height: 0vh;
+            height: 0vh;
+        }
+        100% {
+            height: 100vh;
+            min-height: 90vh;
+        }
+    }
+
+.reven-photo {
+    width: 90%;
+    max-width: 490px;
+    border-radius: 100px 0px 0px 0px;
+    min-width: 320px;
+}
+.flex-tft {
+    margin: 120px 0 20px;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.container-tft {
+    color: white;
+    background: var(--bg-purple6);
+    min-height: 320px;
+    min-width: 320px;
+    max-width: 490px;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+.svgtft-REVEN {
+    margin: 30px 0 0;
+}
+.tft-title {
+    color: var(--bg-purple3);
+    margin: 0px;
+    width: 100%;
+    font-size: 32px;
+    text-shadow: 0 0 4px var(--bg-purple3);
+}
+.img-Pengu {
+    height: 52px;
+    width: 52px;
+}
+.perfil-tft {
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    font-size: 20px;
+    transition: 0.6s;
+    margin-bottom: 28px;
+}
+.perfil-tft:hover {
+    color: #f8b33f;
+    text-shadow: 0 0 4px #f8b33f;
+}
+.socialmedia-tft {
+    width: 100%;
+}
+.tft-center {
+    text-align: center;
+    font-size: 26px;
+}
+@media (max-width: 980px) {
+    
+.reven-photo {
+    border-radius: 30px 30px 0px 0px;
+}
+}

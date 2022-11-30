@@ -1,0 +1,212 @@
+.root-contain-partner {
+        animation: docload 0.1s;
+        overflow: hidden;
+        height: auto;
+    }
+    @keyframes docload {
+        0% {
+            height: 0vh;
+        }
+        100% {
+            height: 100vh;
+        }
+    }
+    .contain-max {
+        color: white;
+        padding: 12px 0px;
+        margin: 0px auto 48px;
+        width: 100%;
+        max-width: 1720px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+.contain-partner-title {
+    font-family: 'Chakra Petch', sans-serif;
+    border-bottom: solid 8px var(--bg-purple6);
+    padding: 4px;
+    font-size: 32px;
+    margin: 120px 10px 0px 20px;
+    display: inline;
+}
+
+.marquee-partners {
+    direction: ltr;
+    width: 100vw;
+    overflow: hidden;
+}
+.contain-partners2 {
+    padding: 8px 0 0;
+    position: relative;
+    top: -28px;
+    background: rgba(37, 18, 73, 0.8);
+    box-shadow: 0px 0px 2px white,0px 0px 2px white;
+}
+
+.partners-item {
+    color: white;
+}
+.partners-item:hover {
+    color:var(--bg-purple3);
+}
+
+
+.box-partner-item{
+    border-radius: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    background: rgba(37, 18, 73, 0.8);
+    margin: 16px 0px;
+    padding: 16px 4px;
+    width: 90%;
+    max-width: 600px;
+}
+.partner-right, .partner-left {
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+.partner-right {
+    align-content: center;
+}
+.social-partners {
+    margin: 0px 80px;
+    max-width: 200px;
+    width: 100%;
+    height: 64px;
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.img-head {
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: solid 4px black;
+}
+.imgPartner-item {
+    border-radius: 50%;
+    border: solid 4px black;
+    height: 192px;
+    width: 192px;
+    overflow: hidden;
+}
+.flex-title {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+}
+.flex-title a svg {
+    width: 34px;
+    height: 34px;
+}
+.partner-title {
+    padding-left: 8px;
+    text-align: start;
+    width: 90%;
+    text-shadow: 0 0 3px white;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 26px;
+}
+.partner-info {
+    text-align: justify;
+    padding: 2px 4px 4px 8px;
+    font-size: 18px;
+    font-family: 'Titillium Web', sans-serif;
+}
+.social-partners a, .flex-title a {
+    color: white;
+}
+.social-partners a:hover, .flex-title a:hover {
+    color:var(--bg-purple3);
+    transition: 0.4s;
+}
+.partner-view-more {
+    font-size: 18px;
+    display: block;
+    position: relative;
+    font-family: 'Titillium Web', sans-serif;
+    background: var(--bg-purple-blur);
+    padding: 100px 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.4s;
+    top:0;
+    animation: newviewmore 3s infinite steps(20);
+    color: white;
+    text-shadow:none;
+}
+
+@keyframes newviewmore {
+    10% {
+        text-shadow:none;
+    }
+    30% {
+        text-shadow: 0 0 5px white,0 0 5px white,0 0 10px white;
+    }
+    70% {
+        color: white;
+        text-shadow: 0 0 5px white,0 0 5px white,0 0 10px white;
+    }
+    90%{
+        text-shadow: none;
+    }
+}
+.img-head:hover .partner-view-more {
+    opacity: 1;
+    top: calc(-200px - 20px);
+}
+
+@media (min-width: 780px){
+    .partner-left {
+        max-width: 240px;
+    }
+    .partner-right {
+        max-width: 340px;
+    }
+    .social-partners {
+        margin: 0px;
+    }
+}
+
+
+@media (min-width: 1320px) {
+    .box-partner-item {
+        max-width: calc(50vw - 60px);
+    }
+    .partner-left {
+        max-width: 240px;
+    }
+    .partner-right {
+        max-width: calc(50vw - 320px);
+    }
+}
+@media (min-width: 1720px) {
+    .box-partner-item {
+        max-width: 800px;
+    }
+    .partner-left {
+        max-width: 240px;
+    }
+    .partner-right {
+        max-width: 480px;
+    }
+}
+
+@media (max-width: 780px) {
+    .box-partner-item{
+        max-width: 500px
+    }
+}
+@media (max-width: 440px) {
+    .social-partners {
+        margin: 0px;
+    }
+}
